@@ -7,6 +7,10 @@ const INITIAL_STATE = {
 
 const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case ShopActionsTypes.FETCH_COLLECTIONS_START_ASYNC:
+      return {
+        ...state,
+      };
     case ShopActionsTypes.FETCH_COLLECTIONS_SUCCES:
       return {
         ...state,
